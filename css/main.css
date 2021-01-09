@@ -1,0 +1,163 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  font-family: 'Dosis', sans-serif;
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+main {
+  max-width: 60em;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* Utilities */
+.container > * {
+  width: 100%;
+}
+
+@media (min-width: 60em) {
+  .container {
+  
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .container > * {
+    width: 40%;
+  }
+  
+}
+
+
+
+
+.container > * + * {
+  margin-top: 4em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1em 1.5em;
+  background-color: #bd945a;
+  color: #fff;
+  margin-top: 1em;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background: none;
+  border: 1px solid #bd945a;
+  color: #000;
+}
+
+/* wedding */
+.wedding {
+  display: block;
+  font-weight: 300;
+}
+
+img {
+  --webkit-filter:blur(15px)
+  filter: blur(15px)
+}
+
+@media (min-width: 60em) {
+  .img-container{
+    position: relative;
+    padding: 0 40px 0px 15px;
+  }
+
+  img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height:600px;
+    object-fit: contain;
+  }
+
+  .img-container::before {
+    content: '';
+    position: absolute;
+    border: 10px solid #bd945a;
+    top: 30px;
+    right: 0;
+    left: 45px;
+    bottom: 0;
+  }
+}
