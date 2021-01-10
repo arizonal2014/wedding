@@ -112,7 +112,7 @@ main {
 .btn {
   display: inline-block;
   padding: 1em 1.5em;
-  background-color: #bd945a;
+  background-color: #8B3249;
   color: #fff;
   margin-top: 1em;
   text-decoration: none;
@@ -125,7 +125,7 @@ main {
 
 .btn:hover {
   background: none;
-  border: 1px solid #bd945a;
+  border: 1px solid #8B3249;
   color: #000;
 }
 
@@ -157,7 +157,7 @@ img {
   .img-container::before {
     content: '';
     position: absolute;
-    border: 10px solid #bd945a;
+    border: 10px solid #8B3249;
     top: 30px;
     right: 0;
     left: 45px;
