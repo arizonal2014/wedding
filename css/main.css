@@ -118,6 +118,8 @@ main {
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 1px;
+  margin-buttom: 10px;
+  
 }
 
 .btn:hover {
